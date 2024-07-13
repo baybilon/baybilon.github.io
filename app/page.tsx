@@ -9,6 +9,7 @@ import Clients from "@/components/Clients";
 import Experience from "@/components/Experience";
 import Approach from "@/components/Approach";
 import Footer from "@/components/ui/Footer";
+import Recent from "@/components/Recent";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <FloatingNav navItems={navItems}/>
         <Hero />
         <Grid />
+        <Recent/>
         <RecentProjects/>
         <Clients/>
         <Experience/>
