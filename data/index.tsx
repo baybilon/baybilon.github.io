@@ -1,26 +1,52 @@
-import { FaGithub, FaLinkedin,FaWhatsapp } from "react-icons/fa";
+import { FaGithub, FaLinkedin,FaWhatsapp, FaReact, FaNodeJs, FaPhp, FaBootstrap } from "react-icons/fa";
+import { AiFillOpenAI } from "react-icons/ai";
+import { IoLogoJavascript } from "react-icons/io5";
 import { IoMailOutline } from "react-icons/io5";
+import { DiCodeigniter, DiJqueryLogo } from "react-icons/di";
 
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "Works", link: "#works" },
   { name: "Contact", link: "#contact" },
 ];
+
+export const tabItems = [
+  {
+    id: 1,
+    name: "Apps"
+  },
+  {
+    id: 2,
+    name: "Content Creation"
+  },
+  {
+    id: 3,
+    name: "Photography"
+  },
+  {
+    id: 4,
+    name: "CGI"
+  }
+];
+
+
 
 export const AingMe = [
   {
     id:"hero",
-    img:"/W_depan_CB_1.jpg"
+    img:"/W_depan_CB_1.jpg",
+    intro:"Computer System Information graduate passionate about web programming, videography, photography, and 3D scenery. Highly focused person who likes to take initiative, work in teams to solve problems, and seek out new things to create with. Proficient in a range of modern technologies, including Node.js and React.js framework libraries, to develop responsive and user-friendly front-end applications, Competent as a full-stack developer using Code Igniter, adept in database design using MySQL, SQL Server, PostgreSQL, and Adobe Family for editing video or photos as content creation",
+    des:""
   }
 ];
 
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "I prioritize communication and team work for problem solving, willing to work as individual or team ",
     description: "",
-    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[30vh] text-white",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
     img: "/b1.svg",
@@ -39,7 +65,7 @@ export const gridItems = [
   {
     id: 3,
     title: "My tech stack",
-    description: "I constantly try to improve",
+    description: "I constantly learn to improve",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -48,7 +74,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "Tech savvy with a passion for web development.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -59,19 +85,19 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
+    title: "Currently learning MERN Stack, trying to learn by doing exploring some libraries to creat Web App",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/b5.svg",
+    img: "",
     spareImg: "/grid.svg",
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
+    title: "Do you want to know me more?",
     description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-1 text-white",
     imgClassName: "",
     titleClassName: "justify-center md:max-w-full max-w-60 text-center",
     img: "",
@@ -82,37 +108,72 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://github.com/adrianhajdin?tab=repositories",
+    title: "WhatsApp Chat AI",
+    des: "LLM text generated AI model implemented in WhatsApp.",
+    img: ["/app/wa/wa1.png",] ,
+    iconLists: [<FaNodeJs/>, <IoLogoJavascript/> , <FaWhatsapp/>, <AiFillOpenAI/>],
+    link: "#",
+    desL: "Learning Node.js by creating a Simple AI chat bot assistant on WhatsApp using whatsapp.web.js libraries and OpenAPI to integrate model LLM, this project inspired by random number who like to spam some scam or link.",
+    tag: ["Chat BOT", "AI", "Open AI", "Gemma", "LLM", "WhatsApp"]
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "https://github.com/adrianhajdin/zoom-clone",
+    title: "Academic Information System",
+    des: "Simplify registration and submision of paper and thesis.",
+    img: ["/app/sisfo/sisfo1.png", "/app/sisfo/sisfo2.jpg", "/app/sisfo/sisfo3.jpg", "/app/sisfo/sisfo4.jpg", "/app/sisfo/sisfo5.jpg"],
+    iconLists: [<FaPhp/>, <DiCodeigniter/> , <FaBootstrap/> , <DiJqueryLogo/>],
+    link: "#",
+    desL: "The academic services of the Widyatama University Information System Study Program are still conducted conventionally, especially in the process of registration of practical work and submission of theses, which are still done by manually registering the papers submitted to the administration. It really requires a relatively long processing time. Therefore, I need to ﬁnd solutions to solve problems that occur in academic services by creating an Academic Information System website. Web-based academic information systems in Widyatama University Information System cover several factors, namely data management systems ranging from lecturer, student data, internship registration, and thesis submission, and there is also making reports using a codeigniter framework.",
+    tag: ["Information System", "Web App", "Registration", "Academic"]
   },
-  {
-    id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://github.com/adrianhajdin/ai_saas_app",
-  },
-  {
-    id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://github.com/adrianhajdin/iphone",
-  },
+
 ];
+
+export const projectContent = [
+  {
+    id:1,
+    link:"https://www.youtube.com/embed/1eS9TcYTkCo?si=Avq4wuHO4steqvXw",
+    title: "Jauntends first single Music Video",
+    tags:["Music Video", "Metal", " Local Band", "The Scene"]
+  },
+  {
+    id:3,
+    link:"https://www.youtube.com/embed/2w9ImeU2L_0?si=ZvC9Gz3CsRzbxAXQ",
+    title: "The Weeknd",
+    tags:["Music Video", "The Crew 2", "Cinematic", "Gaming"]
+  },
+  {
+    id:4,
+    link:"https://www.youtube.com/embed/pgiWKeemcAM?si=6gv_g0kblwFs0Lkp",
+    title: "The Crew 2",
+    tags:["Music Video", "The Crew 2", "Cinematic", "Gaming"]
+  },
+]
+
+export const gallery = [
+  {src:"/gallery/d1.jpg"},
+  {src:"/gallery/g1.jpg"},
+  {src:"/gallery/d2.jpg"},
+  {src:"/gallery/d3.jpg"},
+  {src:"/gallery/a1.jpg"},
+  {src:"/gallery/a2.jpg"},
+]
+
+export const cgi = [
+  {
+    src: "/cgi/t1.jpg",
+    classname: "lg:col-span-1 lg:row-span-3 aspect-auto"
+  },
+  {
+    src: "/cgi/s4.jpg",
+    classname: "lg:col-span-1 lg:row-span-3 aspect-auto" 
+  },
+  {
+    src: "/cgi/b2.jpg",
+    classname: "lg:col-span-2 lg:row-start-2 lg:row-span-2 aspect-auto"
+  },
+ 
+]
 
 export const testimonials = [
   {
@@ -180,34 +241,51 @@ export const companies = [
   },
 ];
 
+// export const workExperience = [
+//   {
+//     id: 1,
+//     title: "Frontend Engineer Intern",
+//     desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+//     className: "md:col-span-2",
+//     thumbnail: "/exp1.svg",
+//   },
+//   {
+//     id: 2,
+//     title: "Mobile App Dev - JSM Tech",
+//     desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+//     className: "md:col-span-2", // change to md:col-span-2
+//     thumbnail: "/exp2.svg",
+//   },
+//   {
+//     id: 3,
+//     title: "Freelance App Dev Project",
+//     desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+//     className: "md:col-span-2", // change to md:col-span-2
+//     thumbnail: "/exp3.svg",
+//   },
+//   {
+//     id: 4,
+//     title: "Lead Frontend Developer",
+//     desc: "Developed and maintained user-facing features using modern frontend technologies.",
+//     className: "md:col-span-2",
+//     thumbnail: "/exp4.svg",
+//   },
+// ];
+
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
+    period:"2021 - 2022",
+    title: "Staff IT Programmer",
     desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
-    className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
+    tags: ["Full-stack", "Web Developer"]
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
+    period:"2022",
+    title: "Drone Pilot",
     desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
-  },
-  {
-    id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
-  },
-  {
-    id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
-    className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
+    tags: ["Drone Operator", "Mining"]
   },
 ];
 
@@ -230,21 +308,25 @@ export const socialButton = [
   {
     id:1,
     icon:FaWhatsapp,
+    title: "WhatsApp",
     link:"https://wa.me/6285158173324"
   },
   {
     id: 2,
+    title: "Email",
     icon: IoMailOutline,
     link:"mailto:iqbal.py@outlook.com"
   },
   {
     id: 3,
     icon: FaLinkedin ,
+    title: "LinkedIn",
     link:"https://www.linkedin.com/in/iqbal-pratama-yuda-57403770/"
   },
   {
     id: 4,
     icon: FaGithub ,
+    title: "Github",
     link:"https://github.com/baybilon/"
   },
 ];

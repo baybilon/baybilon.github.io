@@ -7,7 +7,7 @@ const Clients = () => {
     <div className='py-20' id='testimonials'>
         <h1 className='heading'>
             Kind words from {''}
-            <span className='text-purple'> people</span>
+            <span className='blue-100'> people</span>
         </h1>
         <div className='flex flex-col items-center max-lg:mt-10'>
             <InfiniteMovingCards
