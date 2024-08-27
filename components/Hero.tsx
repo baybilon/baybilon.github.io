@@ -33,7 +33,7 @@ const Hero = () => {
                     </div> 
                   </div>
                   {AingMe.map((me) =>       
-                  <p key={me.index} className='text-base lg:my-6 my-3'>
+                  <p key={me.id} className='text-base lg:my-6 my-3'>
                     {me.intro}
                   </p>
                   )}

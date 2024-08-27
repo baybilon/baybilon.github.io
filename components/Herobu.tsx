@@ -127,7 +127,7 @@ const Hero = () => {
                   <div className="lg:w-[500px] border border-white rounded-lg overflow-hidden ">
                     <div className="rounded-lg ">
                       {AingMe.map((me) => (
-                        <img src={me.img} alt='' className='w-full h-full'/>
+                        <img src={me.img} key={me.id} alt='' className='w-full h-full'/>
                       ))}
                     </div>
                   </div>
