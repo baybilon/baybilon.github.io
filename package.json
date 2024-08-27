@@ -1,10 +1,13 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  "homepage": "https://baybilon.github.io/baybilon.github.io",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "predeploy": "npm run build",
+    "deploy" :"gh-pages -d build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -32,6 +35,7 @@
     "@types/react-lottie": "^1.2.10",
     "eslint": "^8",
     "eslint-config-next": "14.2.4",
+    "gh-pages": "^6.1.1",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
