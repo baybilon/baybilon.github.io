@@ -321,7 +321,7 @@ export const socialButton = [
     id: 3,
     icon: FaLinkedin ,
     title: "LinkedIn",
-    link:"https://www.linkedin.com/in/iqbal-pratama-yuda-57403770/"
+    link:"https://www.linkedin.com/in/iqbal-py"
   },
   {
     id: 4,
