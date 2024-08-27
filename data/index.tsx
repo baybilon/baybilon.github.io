@@ -49,7 +49,7 @@ export const gridItems = [
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[30vh] text-white",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/b1.svg",
+    img: "/app/sisfo/sispad.png",
     spareImg: "",
   },
   {
@@ -277,14 +277,14 @@ export const workExperience = [
     id: 1,
     period:"2021 - 2022",
     title: "Staff IT Programmer",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    desc: "Develop and maintenance web projects that support employees, sales and service operation.",
     tags: ["Full-stack", "Web Developer"]
   },
   {
     id: 2,
     period:"2022",
     title: "Drone Pilot",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    desc: "Utilize drone technology to take erial photography for mining activities, mining development and mining inspection.",
     tags: ["Drone Operator", "Mining"]
   },
 ];

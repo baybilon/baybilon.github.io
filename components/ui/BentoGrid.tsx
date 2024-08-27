@@ -67,7 +67,7 @@ export const BentoGridItem = ({
     };
 
     const handleDownload = () => {
-      const url = "./CV-iqbal-2024.pdf"
+      const url = "./CV2-iqbal-2024.pdf"
       const link = document.createElement("a");
       link.href = url;
       link.download = "text.pdf"
