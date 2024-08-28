@@ -3,11 +3,11 @@ import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { FaHome } from 'react-icons/fa'
 import Image from "next/image";
 import Grid from "@/components/Grid";
-import RecentProjects from "@/components/RecentProjects";
+// import RecentProjects from "@/components/RecentProjects";
 import { navItems } from "@/data/index";
-import Clients from "@/components/Clients";
+// import Clients from "@/components/Clients";
 import Experience from "@/components/Experience";
-import Approach from "@/components/Approach";
+// import Approach from "@/components/Approach";
 import Footer from "@/components/ui/Footer";
 import Recent from "@/components/Recent";
 import ThemeToggle from "@/components/ui/ThemeToggle";

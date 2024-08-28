@@ -1,6 +1,6 @@
 "use client"
 import { cgi, gallery, projectContent, projects, tabItems } from '@/data'
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState,  } from 'react'
 import { FaLocationArrow } from 'react-icons/fa'
 import { FaXmark } from 'react-icons/fa6'
 import ProjectModal from './ui/ProjectModal'
@@ -16,7 +16,7 @@ interface projectsProps {
     title?: string;
     des?: string;
     img?: string[];
-    iconLists?: string[];
+    iconLists?: any[];
     link?: string;
     desL?: string;
     tag?:string[]
@@ -26,7 +26,7 @@ interface projectsProps {
 const Recent = () => {
 
   const dialogRef = useRef<HTMLDialogElement | null> (null);
-  const [activeModal, setActiveModal] = useState<projectsProps>();
+  const [activeModal, setActiveModal] = useState<projectsProps | undefined>();
   const [toggleState, setToggleState] = useState(1);
   // const [activeProject, setActiveProject] = useState(null)
 
@@ -130,22 +130,66 @@ const Recent = () => {
             </div>
             <div className='lg:col-span-1 col-span-2'>
               <div className='flex lg:flex-none flex-wrap lg:gap-3 gap-2'>
-                {activeModal.tag.map((tag, idxTag) => ( 
-                  <div key={idxTag} className='border dark:border-neutral-800 border-neutral-300 rounded-lg dark:bg-neutral-950 bg-neutral-100 w-auto lg:h-10 h-8 md:mb-2 flex justify-center items-center'>
+                {/* {activeModal.tag.map((tag, index) => ( 
+                  <div key={index} className='border dark:border-neutral-800 border-neutral-300 rounded-lg dark:bg-neutral-950 bg-neutral-100 w-auto lg:h-10 h-8 md:mb-2 flex justify-center items-center'>
                     <p className='px-3 text-xs lg:text-base lg:font-normal'>
                       {tag}
                     </p>
                   </div>
-                ))}
+                ))} */}
+                {(() => {
+                  const tags = new Array();
+                  activeModal.tag?.forEach((tagnya, index) => {
+                    tags.push(
+                      <div className='border dark:border-neutral-800 border-neutral-300 rounded-lg dark:bg-neutral-950 bg-neutral-100 w-auto lg:h-10 h-8 md:mb-2 flex justify-center items-center'>
+                        <p className='px-3 text-xs lg:text-base lg:font-normal'>
+                          <span key={index} className="project-icon">
+                            {tagnya}
+                          </span>
+                        </p>
+                      </div>
+                    );
+                  });
+                  return tags;
+                })()}
+
+                {/* {(() => {
+                  const tags = [];
+                  for (let i = 0; i < activeModal.tag?.length; i++){
+                    tags.push(
+                      <div className='border dark:border-neutral-800 border-neutral-300 rounded-lg dark:bg-neutral-950 bg-neutral-100 w-auto lg:h-10 h-8 md:mb-2 flex justify-center items-center'>
+                        <p className='px-3 text-xs lg:text-base lg:font-normal'>
+                          <span key={i} className="project-icon">
+                            {activeModal.tag[i]}
+                          </span>
+                        </p>
+                      </div>
+                    );
+                  }
+                  return tags;
+                })()} */}
+                
               </div>
             </div>
             <div className='col-span-2 pb-20'>
               <div className='items-center grid grid-cols-1 lg:gap-10 gap-6'>
-                {activeModal.img.map((img, idxImg) => (
-                  <div key={idxImg} className='border dark:border-neutral-800 border-neutral-300 rounded-lg'>
+                {/* {activeModal.img.map((img, index) => (
+                  <div key={index} className='border dark:border-neutral-800 border-neutral-300 rounded-lg'>
                       <img src={img} alt='img' className='object-contain object-center w-full h-full p-5'></img>
                   </div>
-                ))}
+                ))} */}
+                  {(() => {
+                  const imgs = new Array();
+                  activeModal.img?.forEach((imgnya, index) => {
+                    imgs.push(
+                      <div key={index} className='border dark:border-neutral-800 border-neutral-300 rounded-lg'>
+                          <img src={imgnya} alt='img' className='object-contain object-center w-full h-full p-5'></img>
+                      </div>
+                    );
+                  });
+                  return imgs;
+                })()}
+                 
               </div>
             </div>
           </div>
