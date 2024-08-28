@@ -35,7 +35,7 @@ export const tabItems = [
 export const AingMe = [
   {
     id:"hero",
-    img:"/W_depan_CB_1.jpg",
+    img:"/hero/W_depan_CB_1.jpg",
     intro:"Computer System Information graduate passionate about web programming, videography, photography, and 3D scenery. Highly focused person who likes to take initiative, work in teams to solve problems, and seek out new things to create with. Proficient in a range of modern technologies, including Node.js and React.js framework libraries, to develop responsive and user-friendly front-end applications, Competent as a full-stack developer using Code Igniter, adept in database design using MySQL, SQL Server, PostgreSQL, and Adobe Family for editing video or photos as content creation",
     des:""
   }
