@@ -98,7 +98,7 @@ const Recent = () => {
   
     <div className='top-0 right-16 absolute'>
       <button 
-        className='fixed p-5'
+        className='fixed p-5 border'
         onClick={closeModal}
       >
         <FaXmark className='h-8 w-8 '/>
