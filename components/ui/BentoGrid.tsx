@@ -164,6 +164,7 @@ export const BentoGridItem = ({
                         }}/>
                     </div>
                     <MagicButton
+                        className=""
                         title={downloaded ? 'CV Downloaded' : 'Download My CV'}
                         icon={<IoCopyOutline/>}
                         position="left"
