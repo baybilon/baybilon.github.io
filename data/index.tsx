@@ -169,7 +169,7 @@ export const cgi = [
     classname: "lg:col-span-1 lg:row-span-3 aspect-auto" 
   },
   {
-    src: "/cgi/b2.jpg",
+    src: "/cgi/b2_1.png",
     classname: "lg:col-span-2 lg:row-start-2 lg:row-span-2 aspect-auto"
   },
  
