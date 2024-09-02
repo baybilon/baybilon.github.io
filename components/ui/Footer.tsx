@@ -9,11 +9,10 @@ const Footer = () => {
         <footer className='w-full py-20  mb-[100px] md:mb-5' id='contact'>
             <div className='flex flex-col items-center'>
                 <h1 className='lg:heading lg:max-w-[45vw] text-3xl text-center'>
-                    Ready to take <span className='text-pelorous-400'>Your</span> digital presence to the next level
+                    Ready to take <span className='text-pelorous-400'>your</span> digital presence to the next level
                 </h1>
                 <p className='text-pelorous-300 dark:text-pelorous-default md:mt-10 my-5 text-center lg:text-md text-sm'>
-                    Reach out to me today and let&apos;s discuss how I can help you
-                    achieve your goals.  
+                    Get in touch with me right now to talk about how I can support you in achieving your objectives. 
                 </p>
                 <a href='mailto:iqbal.py@outlook.com'>
                     <MagicButton
