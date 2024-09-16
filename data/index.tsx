@@ -137,6 +137,12 @@ export const projectContent = [
     tags:["Music Video", "Metal", " Local Band", "The Scene"]
   },
   {
+    id:2,
+    link:"https://www.youtube.com/embed/oiKrnSk13Mc?si=GghNZAGsgdf7z6sX"
+    title: "Jauntends Bonus Song",
+    tags:["Music Video", "Metal", " Local Band", "The Scene"]
+  },
+  {
     id:3,
     link:"https://www.youtube.com/embed/2w9ImeU2L_0?si=ZvC9Gz3CsRzbxAXQ",
     title: "The Weeknd",
