@@ -138,9 +138,9 @@ export const projectContent = [
   },
   {
     id:2,
-    link:"https://www.youtube.com/embed/oiKrnSk13Mc?si=GghNZAGsgdf7z6sX"
-    title: "Jauntends Bonus Song",
-    tags:["Music Video", "Metal", " Local Band", "The Scene"]
+    link:"https://www.youtube.com/embed/oiKrnSk13Mc?si=GghNZAGsgdf7z6sX",
+    title: "Jauntends Bonus Track",
+    tags:["Music Video", "Metal", " Local Band", "The Scene", "Lyric Videos"]
   },
   {
     id:3,
