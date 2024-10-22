@@ -85,7 +85,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently learning MERN Stack, trying to learn by doing exploring some libraries to creat Web App",
+    title: "Currently learning MERN Stack, trying to learn by doing exploring some libraries to create Web App",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
