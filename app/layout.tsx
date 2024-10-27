@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
 
-const inter = Inter({ subsets: ["latin"] });
+const font = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
     title: "iqbal.py Portfolio",
@@ -21,7 +21,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/micon.png" sizes="any" />
       </head>
-      <body className={inter.className}>
+      <body className={font.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

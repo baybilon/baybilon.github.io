@@ -10,6 +10,7 @@ import { link } from 'fs'
 import { motion, AnimatePresence, delay } from 'framer-motion'
 import { GiHidden } from 'react-icons/gi'
 import { Content } from 'next/font/google'
+import Image from 'next/image'
 
 interface projectsProps {
     id?: number;
@@ -183,7 +184,14 @@ const Recent = () => {
                   activeModal.img?.forEach((imgnya, index) => {
                     imgs.push(
                       <div key={index} className='border dark:border-neutral-800 border-neutral-300 rounded-lg'>
-                          <img src={imgnya} alt='img' className='object-contain object-center w-full h-full p-5'></img>
+                        <Image 
+                          key={index} 
+                          src={imgnya} 
+                          alt={"Project"}
+                          width={500}
+                          height={500}
+                          className="object-contain object-center w-full h-full p-5"
+                        />
                       </div>
                     );
                   });
@@ -236,7 +244,15 @@ const Recent = () => {
             
             <div key={project.id} className="lg:p-8 p-5  dark:bg-neutral-900 bg-neutral-200  rounded-lg transform hover:scale-105 transition duration-200">
               <div className='bg-neutral-900 rounded-lg border dark:border-neutral-800 mb-10'>
-                <img className="object-contain object-center md:object-cover w-full lg:h-full md:h-1/4 rounded-xl" src={project.img[0]} alt="img" />
+                <Image 
+                  key={project.id} 
+                  src={project.img[0]} 
+                  alt={"Project"}
+                  width={500}
+                  height={500}
+                  className="object-contain object-center md:object-cover w-full lg:h-full md:h-1/4 rounded-xl"
+                />
+                
               </div>
               <h1 className="mx-auto font-bold lg:text2xl md:text-xl text-base line-clamp-1">{project.title}</h1>
               <p className="mx-auto lg:text-xl lg:font-normal font-light text-sm line-clamp-2">
@@ -315,7 +331,14 @@ const Recent = () => {
             <div className='columns-xs gap-x-8 gap-y-4'>
               {gallery.map((galleryPic:any, index:number) => (
                 <div key={`src=${index}`} className='grid gap-x-8 gap-y-4 mb-8'>
-                  <img className=' rounded-lg border border-neutral-800 aspect-auto' src={galleryPic.src} />
+                  <Image 
+                    key={index} 
+                    src={galleryPic.src} 
+                    alt={"Photo"}
+                    width={500}
+                    height={500}
+                    className='rounded-lg dark:border border-neutral-800 aspect-autobord'
+                  />
                 </div>
               ))}
             </div>
@@ -345,7 +368,14 @@ const Recent = () => {
               </div>
               {cgi.map((cgiImg, index:number) => (
                 <div key={index} className={` ${cgiImg.classname}`}>
-                  <img className='border border-neutral-800 rounded-lg' src={cgiImg.src}/>
+                  <Image 
+                    key={index} 
+                    src={cgiImg.src} 
+                    alt={"CGI"}
+                    width={500}
+                    height={500}
+                    className='border border-neutral-800 rounded-lg'
+                  />
                 </div>
               ))}
               

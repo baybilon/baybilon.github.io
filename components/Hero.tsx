@@ -5,6 +5,7 @@ import MagicButton from './ui/MagicButton';
 import { FaLocationArrow } from 'react-icons/fa';
 import { AingMe, socialButton, socialMedia, workExperience } from '@/data';
 import ThemeToggle from './ui/ThemeToggle';
+import  Image from 'next/image'
 
 const Hero = () => {
   return (
@@ -32,6 +33,7 @@ const Hero = () => {
                       </span>
                     </div> 
                   </div>
+                 
                   {AingMe.map((me) =>       
                   <p key={me.id} className='text-base lg:my-6 my-3'>
                     {me.intro}
@@ -55,8 +57,16 @@ const Hero = () => {
               </div>
 
               <div className='w-fit '>
+                
               {AingMe.map((me) => (
-                  <img key={me.id} src={me.img} alt='' className='aspect-square right-0 lg:h-[500px] border dark:border-neutral-700 rounded-lg'/>
+                <Image 
+                  key={me.id} 
+                  src={me.img} 
+                  alt={me.id}
+                  width={500}
+                  height={500} 
+                  className='aspect-square right-0 lg:h-[500px] border dark:border-neutral-700 rounded-lg'/>
+                  // <img key={me.id} src={me.img} alt='' />
                 ))}
               </div>
           </div>

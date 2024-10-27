@@ -94,6 +94,8 @@
   }
   body {
     @apply bg-background text-foreground;
+    /* styles/globals.css */
+
   }
   button {
     @apply active:outline-none;
